@@ -6,52 +6,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Otomobillerimiz | Alper Rent A Car</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+</head>
 </head>
 <body>
-     <!--Header Area Start-->
-    <header>
-        <h1 class="branch-name">Alper Rent A Car</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="cars.html">Otomobillerimiz</a></li>
-            <li><a href="about-us.html">Hakkımızda</a></li>
-        </ul>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand branch-name text-white" href="#">Alper Rent A Car</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active text-white" href="index.html">Ana Sayfa <span class="sr-only">(current)</span></a>
+            <a class="nav-link text-white" href="cars.html">Otomobillerimiz</a>
+            <a class="nav-link text-white" href="about-us.html">Hakkımızda</a> 
+          </div>
+        </div>
     </nav>
-     <!--Header Area end-->
-      <!--Section Area Start-->
-    <section>
-        <h2 class="cars-area">Otomobillerimiz</h2>
-        <ul>
-            <li>
-                <img src="img/bmw-3-serisi.jpg" alt="">
-                <h3>Bmw 3 Serisi - 2021</h3>
-                <p>Fiyat: 1000 TL</p>
-            </li>
-            <li>
-                <img src="img/bmw-m4.jpg" alt="">
-                <h3>Bmw M4 - 2021</h3>
-                <p>Fiyat: 900 TL</p>
-            </li>
-            
-            <li>
-                <img src="img/ford-mustang.jpg" alt="">
-                <h3>Ford Mustang - 2021</h3>
-                <p>Fiyat: 1700 TL</p>
-            </li>
-        </ul>
+ 
+    <section class="container">
+        <h2 class="text-center mt-3 mb-5">Otomobillerimiz</h2>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="card" style="width: 22rem; height:24.4rem;">
+                    <img src="img/bmw-3-serisi.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Bmw 3 Serisi <span class="badge badge-primary">1000 TL</span></h5>
+                      <p class="card-text">Benzin / Otomatik - 2021</p>
+                      <a href="#" class="btn btn-primary">Kirala</a>
+                      <a href="#" class="btn btn-danger">Detaylar</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 22rem; height:24.4rem;">
+                    <img src="img/bmw-m4-dark.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Bmw M4 <span class="badge badge-primary">900 TL</span></h5>
+                      <p class="card-text">Benzin / Otomatik - 2021</p>
+                      <a href="#" class="btn btn-primary">Kirala</a>
+                      <a href="#" class="btn btn-danger">Detaylar</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 22rem; height:24.4rem;">
+                    <img src="img/ford-mustang.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Ford Mustang <span class="badge badge-primary">1300 TL</span></h5>
+                      <p class="card-text">Benzin / Otomatik - 2021</p>
+                      <a href="#" class="btn btn-primary">Kirala</a>
+                      <a href="#" class="btn btn-danger">Detaylar</a>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <div class="card" style="width: 22rem;">
+                    <img src="img/fiat-500.jpg" class="card-img-top" alt="..." style="width: 350px; height: 234px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Fiat 500 <span class="badge badge-primary">500 TL</span></h5>
+                      <p class="card-text">Benzin / Otomatik - 2021</p>
+                      <a href="#" class="btn btn-primary">Kirala</a>
+                      <a href="#" class="btn btn-danger">Detaylar</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 22rem; height:24.4rem;">
+                    <img src="img/mercedes-benz-amg.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Mercedes AMG GT<span class="badge badge-primary ml-2">Yakında</span></h5>
+                      <p class="card-text">Benzin / Otomatik - 2021</p>
+                      <a href="#" class="btn btn-primary disabled">Kirala</a>
+                      <a href="#" class="btn btn-danger disabled">Detaylar</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 22rem; height:24.4rem;">
+                    <img src="img/range-rover-discovery.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Range Rover Discovery <span class="badge badge-primary ml-2">Yakında</span></h5>
+                      <p class="card-text">Benzin / Otomatik - 2021</p>
+                      <a href="#" class="btn btn-primary disabled">Kirala</a>
+                      <a href="#" class="btn btn-danger disabled">Detaylar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 22rem; height:24.4rem;">
+                    <img src="img/renault-talisman.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Renault Talisman <span class="badge badge-primary">Yakında</span></h5>
+                      <p class="card-text">Benzin / Otomatik - 2021</p>
+                      <a href="#" class="btn btn-primary disabled">Kirala</a>
+                      <a href="#" class="btn btn-danger disabled">Detaylar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
     </section>
      <!--Section Area end-->
     <hr>
     <!--Footer Area start-->
-    <footer>
-        <ul>
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="cars.html">Otomobillerimiz</a></li>
-            <li><a href="about-us.html">Hakkımızda</a></li>
-        </ul>
+    <footer class="py-3 bg-dark text-white ">
+        <p class="ml-5">Copyright © 2021 By <a class="name text-white"href="https://github.com/alpercevizz">Alper Ceviz</a></p> 
     </footer>
     <!--Footer Area end-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

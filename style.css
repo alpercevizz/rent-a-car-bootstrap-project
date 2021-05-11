@@ -1,44 +1,42 @@
 body{
     text-align: center;
+    background-color: #E9ECEF !important;
+    overflow-x: hidden;
 }
 .branch-name {
     color: red;
     
 }
 
-nav ul {
-    list-style-type: none;
-     
-    
+.carousel-inner {
+    position: relative;
+    width: 80% !important;
+    height: 600px !important;
+    margin-left: 10%;
+    overflow: hidden;
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 15px;
+.btn-center {
+    margin-left: 42%;
+}
+.wrapper {
+    width: 100%;
+    height: 250px;
+    background-color: gray;
 }
 
-section .menu-title {
-    color: blue;
+.profile {
+    margin-left: 45%;
+    font-size: 44px;
+    color: darkgreen;
 }
+
+ 
 section .about-title {
-    color: burlywood;
+    color: black;
 }
 section .about-text {
-    color: goldenrod;
+    color: black;
 }
 
-section .cars-area {
-    color: indianred;
-}
-
-section ul li {
-    list-style-type: none;
-}
-
-section ul li h3 {
-    color:olive
-}
-
-footer ul li {
-    list-style-type: none;
-}
+ 
