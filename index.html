@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +7,7 @@
     <title>Ana Sayfa | Alper Rent A Car</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/cefd9e2704.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"> 
 </head>
 <div>
     <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
@@ -24,9 +23,13 @@
                 <a class="nav-link text-white" href="cars.html">Otomobillerimiz</a>
                 <a class="nav-link text-white" href="about-us.html">Hakkımızda</a>
             </div>
-            <div class="nav-link text-white">
+            <div class="nav-link text-white ml-auto">
                 <i class="fas fa-sign-in-alt"></i>
-                <a>Üye Ol</a>
+                <a href="sign-up.html" class="text-white">Üye Ol</a>
+            </div>
+
+            <div class="nav-link text-white">
+                <a href="login.html" class="text-white">Giriş Yap</a>
             </div>
         </div>
     </nav>
@@ -39,8 +42,8 @@
     </div>
     <div class="container">
         <form class="mb-5">
-            <h2 class="text-center">Araç Rezervasyonu</h2>
-            <div class="form-group">
+            <h2 class="text-center"">Araç Rezervasyonu</h2>
+            <div class="form-group"  name= "rent">
                 <label for="exampleFormControlSelect1">Nereden Alacaksınız ? <i class="fas fa-map-marker-alt"
                         style="color:darkgreen"></i></label>
                 <select class="form-control" id="exampleFormControlSelect1">
@@ -227,27 +230,27 @@
     </div>
     <div class="wrapper">
         <div class="testimonials mt-5">
-            <div class="row ml-1">
+            <div class="row ml-1 testimonial-text">
                 <div class="col-md-4 mt-5">
-                    <div class="card" style="width: 25rem;"> 
+                    <div class="card testimonial-card"> 
                         <div class="card-body">
                             <i class="far fa-user profile"></i>
                             <h5 class="mt-3 text-center">Ahmet Veli</h5>
-                        <p class="card-text text-center">"Aracı temiz ve tam saatinde teslim aldım. Bayi çalışanları çok ilgili ve size güven veriyor. "</p>
+                            <p class="card-text text-center">"Aracı temiz ve tam saatinde teslim aldım. Bayi çalışanları çok ilgili ve size güven veriyor. "</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mt-5">
-                    <div class="card" style="width: 25rem;">      
+                    <div class="card testimonial-card">      
                         <div class="card-body">
                             <i class="far fa-user profile"></i>
                             <h5 class="mt-3 text-center">Halil Varlık</h5>
-                        <p class="card-text text-center">"Lorem ipsum dolor sit amet, consectetur adipisicing elit."</p>
+                            <p class="card-text text-center">"Lorem ipsum dolor sit amet, consectetur adipisicing elit."</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mt-5">
-                    <div class="card" style="width: 25rem;">
+                    <div class="card testimonial-card">
                         <div class="card-body">
                         <i class="far fa-user profile"></i>
                         <h5 class="mt-3 text-center">Ezgi Örnek</h5>
@@ -259,56 +262,119 @@
         </div>
         
     </div>
+    
+    <div class="popular-location-area">
+        <div class="row">
+            <div class="col-12 text-center mt-5">
+                <h3>Popüler Lokasyonlar</h3>
+                <p class="mt-3">En fazla kiralama yapılan havaalanı ve şehir merkezlerinde Alper Rent A Car ayrıcalığını yaşayın.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 float-left py-5">
+                <h4 class="mb-3 ml-4">Popüler Şehirler</h4>
+                <div class="row ml-4">
+                    <div class="col-6">
+                        <span class="d-block"><a href="#" class="text-dark">Adana</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Amasya</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Antalya</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Balıkesir</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Bursa</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Denizli</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Elazığ</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Erzurum</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Gaziantep</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">İstanbul</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Kahramanmaraş</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Kocaeli</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Kütahya</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Manisa</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Muğla</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Nevşehir</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Samsun</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Sinop</a></span> 
+                        <span class="d-block"><a href="#" class="text-dark">Trabzon</a></span> 
+                        <span class="d-block"><a href="#" class="text-dark">Yalova</a></span> 
+                    </div>
+                    <div class="col-6">
+                        <span class="d-block"><a href="#" class="text-dark">Afyon</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Ankara</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Aydın</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Batman</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Çorum</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Diyarbakır</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Erzincan</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Eskişehir</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Hatay</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">İzmir</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Kayseri</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Konya</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Malatya</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Mardin</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Muş</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Sakarya</a>></span>
+                        <span class="d-block"><a href="#" class="text-dark">Şanlıurfa</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Sivas</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Van</a></span>
+ 
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 my-5">
+                <h4 class="mb-3">Popüler Havalimanları</h4>
+                <div class="row ml-1">
+                    <div class="col-6">
+                        <span class="d-block"><a href="#" class="text-dark">İstanbul Havalimanı</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">İzmir İç Hatlar</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Antalya İç Hatlar</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Adana İç Hatlar</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Batman Havalimanı</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Diyarbakır Havalimanı</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Erzurum Havalimanı</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Gaziantep Dış Hatlar</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Hatay Havalimanı</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Kahramanmaraş Havalimanı</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Kocaeli Cengiz Topel Havalimanı</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Kütahya Havalimanı</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Mardin Havalimanı</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Muğla Dalaman Havalimanı</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Samsun Havalimanı</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Sinop Havalimanı</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Trabzon Havalimanı</a></span>
+                     
+                    </div>
+                    <div class="col-6">
+                        <span class="d-block"><a href="#" class="text-dark">İstanbul Sabiha Gökçen Havalimanı</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Ankara İç Hatlar</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Antalya Dış Hatlar</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Balıkesir Edremit Körfez Havalimanı</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Denizli Havalimanı</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Elazığ Havalimanı</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Eskişehir Havalimanı</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Gaziantep İç Hatlar</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">İzmir Dış Hatlar</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Kayseri Havalimanı</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Konya Havalimanı</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Malatya Havalimanı</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Muğla Bodrum Havalimanı İç Hatlar</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Nevşehir Havalimanı</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Şanlıurfa Havalimanı</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Sivas Havalimanı</a></span>
+                        <span class="d-block"><a href="#" class="text-dark">Van Havalimanı</a></span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
        
-    <footer class="py-3 bg-dark text-white ">
-        <p class="ml-5">Copyright © 2021 By <a class="name text-white"href="https://github.com/alpercevizz">Alper Ceviz</a></p> 
+    <footer class="py-3 bg-dark text-white">
+        <p class="ml-5 pt-2">Copyright © 2021 By <a class="name text-white"href="https://github.com/alpercevizz">Alper Ceviz</a></p> 
     </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--Section Area Start-->
-    <!--<section>
-        <h2 class="menu-title">Ana Sayfa</h2> 
-        <h3>Güvenli Araç Kiralama İçin Lütfen Bizimle İletişime Geçin</h3>
-        <p>Adres: </p>
-        <address>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, debitis?<br>
-            Lorem ipsum dolor sit amet. 34567, lorem<br>
-            Lorem, ipsum. lorem/ipsum
-        </address>
-        <ul>
-            <li><a href="tel:02122223344">0212 222 33 44.</a></li>
-            <li><a href="mailto:abc@gmail.com">abc@gmail.com</a></li>
-        </ul>
-    </section>
-    <hr>
-     <!--Section Area End-->
-    <!--Footer Area start-->
-    <!--<footer>
-        <ul>
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="cars.html">Otomobillerimiz</a></li>
-            <li><a href="about-us.html">Hakkımızda</a></li>
-        </ul>
-    </footer> -->
-    <!--Footer Area end-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>  
     </body>
 
 </html>
